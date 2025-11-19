@@ -4,28 +4,36 @@
 // notas entre 5.0 e 7,0 ou a mensagem de REPROVADO para média inferior a 5,0.
 
 
-let num01 = parseFloat(prompt("Digite sua nota: "))
+alert("Informe as notas de 0 a 10")
+let nota01 = parseFloat(prompt("Digite sua primeira nota: "))
 
-let num02 = parseFloat(prompt("Digite sua nota: "))
+let nota02 = parseFloat(prompt("Digite sua segunda nota: "))
 
-let num03 = parseFloat(prompt("Digite sua nota: "))
+let nota03 = parseFloat(prompt("Digite sua terceira nota: "))
 
-let num04 = parseFloat(prompt("Digite sua nota: "))
+let nota04 = parseFloat(prompt("Digite sua quarta nota: "))
 
-let resultado = num01 + num02 + num03 + num04
+let media = (nota01 + nota02 + nota03 + nota04)/4
 
-console.log(resultado)
+console.log(media)
 
-let divisao = resultado/4
+// let divisao = media/4
 
-if (resultado >= 7) {
+if (media >= 7) {
     console.log("APROVADO!")
 }
 
-if (resultado >=5<=7) {
+ else if (media <7 && media>= 5) {
     console.log("RECUPERAÇÃO")
 }
 
-if (resultado <=5) {
-    console.log("REPROVADO!")
+// if (media <5) {
+//     console.log("REPROVADO!")
+// }
+
+else{
+    console.log("REPROVADO")
 }
+
+console.log("A media do aluno é: "+ media)
+
