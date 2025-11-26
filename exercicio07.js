@@ -9,42 +9,28 @@
 
 // ---------------------------------------------------------------------------------------------------------------
 
- alert("Digite o valor total da sua compra: ")
- let valorEntrada = prompt("Digite o valor: ")
-let total = parseFloat(valorEntrada);
+alert("Digite o valor total da sua compra: ")
+let valorTotal = parseFloat(prompt("Digite o valor total da compra: "));
 
-let desconto = 0;
-let final = 0;
-let percentualDesconto = 0;
+let desconto;
 
-if (isNaN(total) || total < 0) {
-    console.log("Valor inválido. Por favor, digite um número positivo.");
-}
-
-
-else if (total <= 100.00){
-    percentualDesconto = 0;
+if (valorTotal <= 100.00) {
     desconto = 0;
     console.log("Para compras abaixo de R$100,01 não tem desconto")
 }
 
-else if (final <= 200.00 ){
-    percentualDesconto = 10; // 10%
-    desconto = total * 0.10;
-    console.log("Você tem umm desconto de 10% para aplicar na sua compra")
+else if (valorTotal <= 200.00) {
+    desconto = 0.10;
 }
-
 
 else {
-    percentualDesconto = 20; // 20%
-    desconto = total * 0.20;
-    console.log("Você tem umm desconto de 20% para aplicar na sua compra")
+    desconto = 0.20;
 }
 
-final = total - desconto
-console.log("\n--- Resumo da Compra ---");
-console.log(`Valor Original: R$ ${total.toFixed(2)}`);
-console.log(`Desconto Aplicado: ${percentualDesconto}% (R$ ${desconto.toFixed(2)})`);
-console.log(`**Valor Final a Pagar:** R$ ${final.toFixed(2)}`);
-alert(`Valor Final a Pagar: R$ ${final.toFixed(2)}`);
+let valorFinal = valorTotal - (valorTotal * desconto);
+
+alert(valorFinal);
+
+
+
 
