@@ -11,13 +11,13 @@
 
 // for (let i = 0; i < frutas.length; i++) {
 //     console.log(frutas[i]);
-    
+
 // }
 //  ============================================================================================================
 
-let tarefas = ["Escovar os dentes", "Lavar o rosto", "Tomar banho", "Lavar o cabelo", "Secar o cabelo", "Fazer maquiagem", "Passar perfume" ];
+let tarefas = ["Escovar os dentes", "Lavar o rosto", "Tomar banho", "Lavar o cabelo", "Secar o cabelo", "Fazer maquiagem", "Passar perfume"];
 console.log("A lista de tarefas tem " + tarefas.length + " itens.");
 
-for (let i = 0; i < tarefas.length; i++){
-console.log(tarefas[i])
+for (let i = 0; i < tarefas.length; i++) {
+    console.log(tarefas[i])
 }
