@@ -22,10 +22,10 @@ let tadeu = {
     idade: 27,
     dataNasc: new Date(1998, 1, 15),
     hobbies: ["Jogar", "Dar aula", "Cozinhar"],
-    atribuirNota(){
+    atribuirNota() {
         console.log("colocando nota do aluno");
     },
-    baterPonto(){
+    baterPonto() {
         let horarioBatido = new Date(2025, 10, 28, 17, 5);
     }
 };
